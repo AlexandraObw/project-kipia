@@ -1,5 +1,25 @@
 .header {
+    min-width: 90%;
+    background-color: white;
+    border: dimgray solid ;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+.header__title {
+    margin: auto 8px;
 
+}
+.title {
+    color: dimgray;
+}
+.header__navigation {
+
+}
+.header__link {
+    margin: auto 0;
+}
+.link {
+    text-decoration: none;
 }
