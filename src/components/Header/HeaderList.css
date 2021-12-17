@@ -1,0 +1,19 @@
+.header__list {
+    display: inline-block;
+}
+.list {
+    list-style-type: none;
+}
+.link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.link:focus {
+    outline:none;
+    box-shadow: 0 0 0 4px lightgray;
+}
+.link:visited,
+.link:link {
+    color: black;
+}
