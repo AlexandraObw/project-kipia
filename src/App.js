@@ -10,7 +10,6 @@ import OrderSelection from './pages/OrderSelection/OrderSelection';
 import Footer from './components/Footer/Footer';
 import Error from "./pages/Error/Error";
 import {createContext, useEffect, useState} from "react";
-import About from "./pages/About/About";
 
 export const AuthContext = createContext(null);
 
