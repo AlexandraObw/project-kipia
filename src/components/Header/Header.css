@@ -1,25 +1,17 @@
 .header {
-    min-width: 90%;
+    min-width: 85vw;
+    max-width: 85vw;
+    min-height: 15vh;
     background-color: white;
-    border: dimgray solid ;
-    border-radius: 20px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 12px;
-}
-.header__title {
-    margin: auto 8px;
-
-}
-.title {
-    color: dimgray;
+    padding: 12px;
 }
 .header__navigation {
+    margin: auto;
+}
 
-}
-.header__link {
-    margin: auto 0;
-}
-.link {
-    text-decoration: none;
+.body__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 16px auto;
 }

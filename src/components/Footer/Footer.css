@@ -1,6 +1,12 @@
 .footer {
+    background-color: white;
+    min-width: 85vw;
+    max-height: 5vh;
+    min-height: 5vh;
+    padding: 12px;
+}
+.body__footer {
     display: flex;
     justify-content: center;
-    height: 20%;
-    background-color: darkgrey;
+    margin: 16px auto;
 }
