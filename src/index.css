@@ -19,3 +19,21 @@ code {
   min-height: 100vh;
   min-width: 100vw;
 }
+.button {
+  border-radius: 8px;
+  border-style: solid;
+  padding: 8px 20px;
+  border-color: dimgray;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+}
+.button:hover  {
+  background-color: slategray;
+  color:white;
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px lightgray;
+}

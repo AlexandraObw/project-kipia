@@ -1,0 +1,31 @@
+.modal__wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+.modal__wrapper.close {
+    display: none;
+    height:0;
+}
+.modal__wrapper.open {
+    display:block;
+    height:100%;
+}
+.modal-body {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    max-height: 50%;
+    max-width: 50%;
+}
+.modal__modal-body {
+    margin: auto;
+    margin-top: 10%;
+}
+.modal__button {
+    display: block;
+    z-index: +100;
+}

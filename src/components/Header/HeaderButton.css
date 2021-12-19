@@ -1,22 +1,4 @@
-.button-login {
-    border-radius: 8px;
-    border-style: solid;
-    padding: 8px 20px;
-    border-color: dimgray;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: white;
-}
-.button-login:hover  {
-    background-color: slategray;
-    color:white;
-    cursor: pointer;
-}
-.button-login:focus {
-    outline:none;
-    box-shadow: 0 0 0 4px lightgray;
-}
-.header__button-login {
+.header__button {
     display: inline-block;
     margin: auto;
 }

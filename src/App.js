@@ -9,13 +9,15 @@ import OrderRepair from './pages/OrderRepair/OrderRepair';
 import OrderSelection from './pages/OrderSelection/OrderSelection';
 import Footer from './components/Footer/Footer';
 import Error from "./pages/Error/Error";
-import {createContext, useEffect, useState} from "react";
+import {createContext, useContext, useEffect, useState} from "react";
+import Modal from "./components/Modal/Modal";
 
-export const AuthContext = createContext(null);
+export const AppContext = createContext(null);
 
 function App() {
 
     const [isAuth, setIsAuth] = useState(false);
+    const [isVisible, setIsVisible] = useState (false);
 
     useEffect(() => {
     if (localStorage.getItem('isAuth')) {
@@ -33,11 +35,12 @@ function App() {
         localStorage.removeItem('isAuth')
     }
 
-    const context = {isAuth,setIsAuth, login, logout}
+
+    const context = {isAuth,setIsAuth, login, logout, isVisible, setIsVisible}
 
     return (
         <div className="App">
-            <AuthContext.Provider value={context}>
+            <AppContext.Provider value={context}>
                 <Routes>
                     <Route path = {'/'} element = {<Layout />}>
                         <Route index element = {<Index />}/>
@@ -49,21 +52,26 @@ function App() {
                         <Route path = "*" element = {<Error />}/>
                     </Route>
                 </Routes>
-                </AuthContext.Provider>
+                </AppContext.Provider>
         </div>
   )
 }
 
 const Layout = () => {
-     return (
-         <div className="App">
-             <Header/>
-             <main className="main body__main">
-                 <Outlet/>
-             </main>
-             <Footer/>
-             </div>
-     )
+    const {isVisible, setIsVisible} = useContext(AppContext);
+    return (
+        <div className="App">
+            <Header/>
+            <Modal isOpened={isVisible}
+                   closeModal={() => setIsVisible(false)} >
+            </Modal>
+            <main className="main body__main">
+                <Outlet/>
+            </main>
+            <Footer/>
+        </div>
+    )
 }
+
 
 export default App;
