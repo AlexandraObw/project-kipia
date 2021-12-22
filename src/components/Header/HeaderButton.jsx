@@ -1,11 +1,14 @@
 import './HeaderButton.css'
-import {Link} from "react-router-dom";
 import {useContext} from "react";
 import {AppContext} from "../../App";
+import {Link} from "react-router-dom";
 
 export default function HeaderButton() {
-    const {isVisible, setIsVisible} = useContext(AppContext)
+    const {isAuth, logout} = useContext(AppContext)
     return (
-            <button className="header__button button" onClick={()=>setIsVisible(true)}>Войти</button>
-)
+        <Link to = {'login'} className="header__button-login button-login">
+            {isAuth && <button className="header__button button">Выйти</button>}
+            {!isAuth && <button className="header__button button" onClick={logout}>Войти</button> }
+        </Link>
+    )
 }

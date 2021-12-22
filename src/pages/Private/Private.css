@@ -1,5 +1,8 @@
-.repair__form {
+.main__private {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.body__button {
+    margin: 12px;
 }

@@ -1,0 +1,8 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.catalog__title {
+    text-align: center;
+}

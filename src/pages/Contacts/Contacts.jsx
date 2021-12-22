@@ -3,10 +3,11 @@ import './Contacts.css'
 function Contacts() {
     return (
         <div className="page-text main__page-text">
-            <iframe
+            <h1 className = "title form__title">Контакты</h1>
+            <iframe title={'Расположение на карте'}
                 src="https://yandex.ru/map-widget/v1/?um=constructor%3A3b49a6f5dd866e1f638b2e505e441f7775d0a2804dfd40a5f69fe0a8f4d39462&amp;source=constructor"
-                width="100%" height="350" frameBorder="0"></iframe>
-            <ul className="contacts__list">
+                width="90%" height="270" frameBorder="0"></iframe>
+            <ul className="contacts__list list">
                 <li className="contacts__list-elem">Адрес:</li>
                 <li>ул. Красная, 1000</li>
                 <li className="contacts__list-elem">Режим работы:</li>
