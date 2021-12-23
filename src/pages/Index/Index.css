@@ -2,3 +2,21 @@
     font-size: 1.1rem;
     text-align: center;
 }
+.main__index-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 80%;
+}
+.main__page-text {
+    margin-left: 20px;
+}
+.index-text {
+    text-align: left;
+}

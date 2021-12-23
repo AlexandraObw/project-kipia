@@ -8,8 +8,11 @@
 
 .main{
   min-width: 85vw;
+  max-width: 85vw;
   background-color: white;
   min-height: 62vh;
+  max-height: 62vh;
   padding: 12px;
+  overflow-y: scroll;
 }
 

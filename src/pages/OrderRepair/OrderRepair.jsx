@@ -21,7 +21,7 @@ export default function OrderRepair() {
         setPosts(repair)
         setTitle('')
         setBody('')
-        // alert('Заявка успешно отправлена!');
+        alert('Заявка успешно отправлена!');
         setIsVisible({isVisible, repair: false})
     }
 
