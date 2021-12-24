@@ -44,8 +44,8 @@ function App() {
     const context = {isAuth,setIsAuth, isVisible, setIsVisible, login, logout}
 
     return (
-        <div className="App">
-            <AppContext.Provider value={context}>
+        <AppContext.Provider value={context}>
+            <div className="App">
                 <Routes>
                     <Route path = {'/'} element = {<Layout />}>
                         <Route index element = {<Index />}/>
@@ -61,8 +61,8 @@ function App() {
                         </Route>
                     </Route>
                 </Routes>
-                </AppContext.Provider>
-        </div>
+            </div>
+        </AppContext.Provider>
   )
 }
 

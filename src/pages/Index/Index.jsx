@@ -1,4 +1,5 @@
 import './Index.css'
+// import Slider from "../../components/Slider/Slider";
 
 export default function Index() {
     return (
@@ -6,7 +7,7 @@ export default function Index() {
             <h1 className="title form__title">Главная страница</h1>
             <h2>О компании</h2>
             <div className="index__box box">
-                <img src="https://i.ibb.co/W0PjRkr/1087927.png" alt='О компании' width='100px' />
+                <img src="https://i.ibb.co/W0PjRkr/1087927.png" alt='О компании' width='100px' className="main__image"/>
                 <p className="index-text index__page-text">Вы находитесь на странице компании КИП-Краснодар. Наша фирма занимается поставками
                     и ремонтом контрольно-измерительных приборов и оборудования.
                     В каталоге представлены контрольно-измерительные приборы, датчики и средства автоматизации российского и
@@ -30,6 +31,7 @@ export default function Index() {
                         Мы осуществляем по всей территории РФ транспортными компаниями Деловые Линии и СДЭК.
                     В Краснодаре возможен самовывоз (по предварительной договоренности) и бесплатная доставка в пределах города.
                 </p>
+            {/*<Slider />*/}
             </div>
         </div>
     )

@@ -10,7 +10,6 @@ const nanoid = customAlphabet('1234567890', 3)
 export default function OrderRepair() {
 
     const {isAuth, isVisible, setIsVisible} = useContext(AppContext);
-    const {setPosts} = useContext(AppContext)
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
 
@@ -18,11 +17,10 @@ export default function OrderRepair() {
         event.preventDefault()
         const newPost = {title, body, id: Number(nanoid())}
         repair.push(newPost)
-        setPosts(repair)
         setTitle('')
         setBody('')
         alert('Заявка успешно отправлена!');
-        setIsVisible({isVisible, repair: false})
+        setIsVisible((prevState) => ({...prevState, repair: false}))
     }
 
     if (!isAuth) {
